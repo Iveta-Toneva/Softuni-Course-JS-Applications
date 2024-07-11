@@ -8,7 +8,6 @@ function students() {
     let gradeInput = document.querySelector('input[name=grade]');
     let submitButton = document.querySelector('#submit');
     let url = 'http://localhost:3030/jsonstore/collections/students';
-    let table = document.querySelector('#results');
     let tableBody = document.querySelector('table tbody');
 
     showStudents();
@@ -53,7 +52,6 @@ function students() {
 
 
     });
-
 
     function showStudents() {
         tableBody.innerHTML = '';
